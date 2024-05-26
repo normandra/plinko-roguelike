@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://cjr4e4s47o8t4"]
+
+[ext_resource type="Script" path="res://DrawCircle.gd" id="1_iym1e"]
+[ext_resource type="Script" path="res://stick.gd" id="1_vicra"]
+[ext_resource type="AudioStream" uid="uid://c6t8k4d7lho74" path="res://money-pickup-2-89563.mp3" id="3_1pxtn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fptxh"]
+radius = 4.0
+
+[node name="Stick" type="StaticBody2D"]
+script = ExtResource("1_vicra")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_fptxh")
+
+[node name="Draw" type="Node2D" parent="."]
+script = ExtResource("1_iym1e")
+color = Color(0.404511, 0.404511, 0.404511, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_1pxtn")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_fptxh")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

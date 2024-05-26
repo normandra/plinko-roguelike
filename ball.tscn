@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://olk3hwnoirma"]
+
+[ext_resource type="Script" path="res://DrawCircle.gd" id="1_fwbhy"]
+[ext_resource type="Script" path="res://ball.gd" id="1_gd8ha"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_6qb0y"]
+bounce = 0.1
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_51uhm"]
+radius = 7.5
+
+[node name="Ball" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_6qb0y")
+script = ExtResource("1_gd8ha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_51uhm")
+
+[node name="Draw" type="Node2D" parent="."]
+script = ExtResource("1_fwbhy")
+color = Color(0.999911, 0.461099, 0.392828, 1)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
