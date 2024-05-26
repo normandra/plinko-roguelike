@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1716739856
+ball.gd::GDScript::-1::1716724823::0::1::::<>RigidBody2D<>::
+ball.tscn::PackedScene::1006009540642964508::1716729939::0::1::::<><>::res://DrawCircle.gd<>res://ball.gd
+DrawCircle.gd::GDScript::-1::1716725294::0::1::::<>Node2D<>::
+DrawRectangle.gd::GDScript::-1::1716739412::0::1::::<>Area2D<>::
+icon.svg::CompressedTexture2D::5318126485215356655::1716719538::1716719542::1::::<><>::
+main.gd::GDScript::-1::1716739779::0::1::::<>Node2D<>::
+main.tscn::PackedScene::5516698638611167664::1716739801::0::1::::<><>::res://main.gd<>uid://cjr4e4s47o8t4::::res://stick.tscn<>uid://olk3hwnoirma::::res://ball.tscn<>uid://qs6ujrjfm1v7::::res://score_pad.tscn
+money-pickup-2-89563.mp3::AudioStreamMP3::6989941745473177149::1716739856::1716739858::1::::<><>::
+score_pad.tscn::PackedScene::1162098739823381730::1716739801::0::1::::<><>::res://DrawRectangle.gd
+stick.tscn::PackedScene::5441404870257969591::1716729939::0::1::::<><>::res://DrawCircle.gd
