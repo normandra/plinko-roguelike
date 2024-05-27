@@ -45,3 +45,17 @@ volume_db = -29.405
 pitch_scale = 4.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="ScorePad" to="ScorePad" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17482" to="@Area2D@17482" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17484" to="@Area2D@17484" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17486" to="@Area2D@17486" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17488" to="@Area2D@17488" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17490" to="@Area2D@17490" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17492" to="@Area2D@17492" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17494" to="@Area2D@17494" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17496" to="@Area2D@17496" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17498" to="@Area2D@17498" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17500" to="@Area2D@17500" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17502" to="@Area2D@17502" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17504" to="@Area2D@17504" method="_on_body_entered"]
+[connection signal="body_entered" from="@Area2D@17506" to="@Area2D@17506" method="_on_body_entered"]
